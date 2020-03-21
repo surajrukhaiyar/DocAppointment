@@ -1,0 +1,82 @@
+<!-- <p>
+  Form Status: {{ patientForm.status }}
+</p> -->
+<div class="formBorder">
+<form [formGroup]="patientForm" (ngSubmit)="onSubmit()">
+  <div>
+      <img src="assets/capaar-logo.jpg">
+  </div>
+  <mat-form-field>
+    <mat-label>First Name</mat-label>
+    <input matInput placeholder="firstName" formControlName="firstName">
+    <mat-icon matSuffix>mode_edit</mat-icon>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Last Name</mat-label>
+    <input matInput placeholder="lastName" formControlName="lastName">
+    <mat-icon matSuffix>mode_edit</mat-icon>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Gender</mat-label>
+    <mat-select formControlName="gender">
+        <mat-option value="Male">Male</mat-option>
+        <mat-option value="Female">Female</mat-option>
+    </mat-select>
+    <mat-icon matSuffix>mode_edit</mat-icon>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Age</mat-label>
+    <input matInput placeholder="age" formControlName="age">
+    <mat-icon matSuffix>mode_edit</mat-icon>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Mail-Id</mat-label>
+    <input matInput placeholder="abc@domain.com" formControlName="mailId">
+    <mat-icon matSuffix>email</mat-icon>
+  </mat-form-field>
+  
+<br>
+  <mat-form-field>
+    <mat-label>Mobile Number</mat-label>
+    <span matPrefix>+91 &nbsp;</span>
+    <input maxlength="10" type="tel" matInput placeholder="9999999999" formControlName="mobileNumber">
+    <mat-icon matSuffix>mode_edit</mat-icon>
+  </mat-form-field>
+  <br>
+
+  <button type="submit" mat-raised-button color="primary" style="float: right;margin: 0 10%;">
+    Add Doctor
+  </button>
+  <!-- <button type="submit" [disabled]="!patientForm.valid">Submit</button> -->
+</form>
+
+</div>
+
+
+<!-- <div formGroupName="address">
+    <h3>Address</h3>
+  
+    <label>
+      Street:
+      <input type="text" formControlName="street">
+    </label>
+  
+    <label>
+      City:
+      <input type="text" formControlName="city">
+    </label>
+    
+    <label>
+      State:
+      <input type="text" formControlName="state">
+    </label>
+  
+    <label>
+      Zip Code:
+      <input type="text" formControlName="zip">
+    </label>
+  </div> -->

@@ -1,0 +1,41 @@
+  <form [formGroup]="ePreviousEmploymentForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Organisation</mat-label>
+      <input matInput placeholder="Organisation" formControlName="organisation">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+      <mat-label>Designation</mat-label>
+      <input matInput placeholder="Designation" formControlName="designation">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+      <mat-label>From Date</mat-label>
+      <input matInput placeholder="From Date" formControlName="fromDate">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+      <mat-label>To Date</mat-label>
+      <input matInput placeholder="To Date" formControlName="toDate">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+      <mat-label>Total Salary</mat-label>
+      <input matInput placeholder="Total Salary" formControlName="totalSalary">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+
+     <div>
+      <button type="button" mat-button matStepperPrevious mat-raised-button color="primary" style="float: left;margin: 0 10%;">Back</button>
+      <button type="button" mat-button matStepperNext mat-raised-button color="primary" style="float: right;margin: 0 10%;">Next</button>
+    </div>
+  </form>

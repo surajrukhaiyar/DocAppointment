@@ -1,0 +1,55 @@
+  <form [formGroup]="eEducationDetailForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Qualification</mat-label>
+      <input matInput placeholder="Qualification" formControlName="qualification">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+      <mat-label>Institution</mat-label>
+      <input matInput placeholder="Institution" formControlName="institution">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+      <mat-label>University</mat-label>
+      <input matInput placeholder="University" formControlName="university">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+      <mat-label>Year Of Completion</mat-label>
+      <input matInput placeholder="Year Of Completion" formControlName="yearOfCompletion">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+      <mat-label>Percentage</mat-label>
+      <input matInput placeholder="Percentage" formControlName="percentage">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+      <mat-label>City</mat-label>
+      <input matInput placeholder="City" formControlName="city">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+      <mat-label>Pin Code</mat-label>
+      <input matInput placeholder="Pin Code" formControlName="pinCode">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+
+     <div>
+      <button type="button" mat-button matStepperPrevious mat-raised-button color="primary" style="float: left;margin: 0 10%;">Back</button>
+      <button type="button" mat-button matStepperNext mat-raised-button color="primary" style="float: right;margin: 0 10%;">Next</button>
+    </div>
+  </form>

@@ -1,0 +1,31 @@
+
+<div class="formBorder">
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+        <input matInput placeholder="Name" formControlName="name">
+    </mat-form-field>  
+<br>
+    <mat-form-field>
+        <input type="password" matInput placeholder="Password" formControlName="password">
+    </mat-form-field>  
+<br>
+<!-- <mat-form-field>
+  <mat-select formControlName="role" placeholder='Role'>
+      <mat-option value="user">User</mat-option>
+      <mat-option value="admin">Admin</mat-option>
+  </mat-select>
+</mat-form-field>
+<br> -->
+<button type="submit" mat-raised-button color="warn" style="width:182px;">Sign Up</button>
+</form>
+
+<button type="button" mat-button color="primary" routerLink="../app-status" style="float: right;margin: 0 10%;">
+    <i class="material-icons">
+        navigate_before
+    </i> Go to login
+</button>
+
+<p hidden>
+Form Value: {{ profileForm.value | json }}
+</p>
+</div>

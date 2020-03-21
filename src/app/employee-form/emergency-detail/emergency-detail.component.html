@@ -1,0 +1,32 @@
+  <form [formGroup]="eEmergencyDetailForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>First Name</mat-label>
+      <input matInput placeholder="firstName" formControlName="firstName">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>Last Name</mat-label>
+      <input matInput placeholder="lastName" formControlName="lastName">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>Relationship</mat-label>
+      <input matInput placeholder="Relationship" formControlName="relationship">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+    <br>
+    <mat-form-field style="width: 200px;">
+      <mat-label>Mobile Number</mat-label>
+      <span matPrefix>+91 &nbsp;</span>
+      <input maxlength="10" type="tel" matInput placeholder="9999999999" formControlName="mobileNumber">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+     <div>
+      <button type="button" mat-button matStepperPrevious mat-raised-button color="primary" style="float: left;margin: 0 10%;">Back</button>
+      <button type="button" mat-button matStepperNext mat-raised-button color="primary" style="float: right;margin: 0 10%;">Next</button>
+    </div>
+  </form>

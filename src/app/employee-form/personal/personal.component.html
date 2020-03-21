@@ -1,0 +1,62 @@
+  <form [formGroup]="ePersonalDetailForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Aadhar No</mat-label>
+      <input matInput placeholder="Aadhar No" formControlName="aadharNo">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+      <mat-label>Passport Number</mat-label>
+      <input matInput placeholder="Passport Number" formControlName="passportNo">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field> 
+    <br>
+
+    <mat-form-field>
+      <mat-label>Expiry Date</mat-label>
+      <input matInput placeholder="Expiry Date" formControlName="expiryDate">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+    
+    <mat-form-field>
+      <mat-label>DL Number</mat-label>
+      <input matInput placeholder="DL Number" formControlName="dlNo">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+    
+    <mat-form-field>
+      <mat-label>DL Expiry</mat-label>
+      <input matInput placeholder="DL Expiry" formControlName="dlExpiryDate">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+    
+    <mat-form-field>
+      <mat-label>Date Of Joining</mat-label>
+      <input matInput placeholder="Date Of Joining" formControlName="dateOfJoining">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+    
+    <mat-form-field>
+      <mat-label>Employeement Type</mat-label>
+      <input matInput placeholder="Employeement Type" formControlName="employementType">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+      <mat-label>Language Known</mat-label>
+      <input matInput placeholder="Language Known" formControlName="languageKnown">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    <br>
+
+     <div>
+      <button type="button" mat-button matStepperPrevious mat-raised-button color="primary" style="float: left;margin: 0 10%;">Back</button>
+      <button type="button" mat-button matStepperNext mat-raised-button color="primary" style="float: right;margin: 0 10%;">Next</button>
+    </div>
+  </form>

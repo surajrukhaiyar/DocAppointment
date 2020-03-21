@@ -1,0 +1,39 @@
+
+.docProfileContainer{
+    display: flex;
+    height: 30%;
+    .docProfileDiv {
+      flex:1;
+    }
+
+    .docName{
+      margin: 45% 0 0 2%;
+      text-decoration: underline;
+      font-size: x-large;
+      color: rebeccapurple;
+    }
+    .docAddress{
+      margin: 0 0 0 2%;
+      color: darkred;
+    }
+
+    img{
+      height: 100%;
+      width: 100%;
+      border:solid 1px blue;
+    }
+  }
+
+.clinicDetailsContainer{
+  .clinicName{
+    margin: 0 0 0 5%;
+  }
+
+  .clinicLocation{
+    margin: 0 0 0 5%;
+  }
+
+  .contactDetail{
+    margin: 0 0 0 5%;
+  }
+}

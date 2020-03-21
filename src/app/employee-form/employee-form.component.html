@@ -1,0 +1,28 @@
+  <mat-horizontal-stepper labelPosition="bottom" #stepper animationDuration="0ms">
+   
+      <mat-step label="General">
+        <app-general></app-general>
+      </mat-step>
+      <mat-step label="Emergency Details">
+        <app-emergency-detail></app-emergency-detail>
+        <div>
+          <button type="button"  mat-button matStepperNext mat-raised-button color="primary" style="float: right;margin: 0 10%;">Next</button>
+        </div>
+      </mat-step>
+      
+      <mat-step label="Personal">
+        <app-personal></app-personal>
+      </mat-step>
+
+      <mat-step label="Education">
+        <app-education></app-education>
+      </mat-step>
+      
+      <mat-step label="Privious Employment">
+        <app-previous-employment></app-previous-employment>
+      </mat-step>
+
+      <mat-step label="Salary">
+        <app-salary></app-salary>
+      </mat-step>
+  </mat-horizontal-stepper>
